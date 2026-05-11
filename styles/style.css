@@ -1,5 +1,51 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: var(--content-font-family);
+  font-size: var(--content-font-size);
+  font-weight: var(--content-font-weight);
+  line-height: var(--content-line-height);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  inline-size: 100%;
 }
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  border-inline-end: 1px solid var(--corners-color);
+  border-block-start: 1px solid var(--corners-color);
+  inset-block-start: var(--page-padding);
+  inset-inline-end: var(--page-padding);
+  inline-size: 25px;
+  block-size: 25px;
+  
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  border-inline-start: 1px solid var(--corners-color);
+  border-block-end: 1px solid var(--corners-color);
+  inset-block-end: var(--page-padding);
+  inset-inline-start: var(--page-padding);
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.highlight {
+  background: var(--accent-color);
+  color: var(--article-title-color);
+}
+  
+
+
+

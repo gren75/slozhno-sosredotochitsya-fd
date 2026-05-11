@@ -1,0 +1,118 @@
+.header {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  align-items: center;
+  margin-bottom: 47px;
+  height: max(100vh, 668px);
+}
+
+.header__rec {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  color: var(--accent-color);
+  line-height: 1.4;
+  text-transform: uppercase;
+  inset-block-start: var(--page-padding);
+  inset-inline-end: calc(9px + var(--page-padding));
+}
+
+.header__rec::after {
+  content: '';
+  display: block;
+  inline-size: 9px;
+  block-size: 9px;
+  margin-left: 10px;
+  border-radius: 100%;  /* Превращает квадрат в круг*/
+  background: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+.header__theme-menu {
+  justify-self: end; /* mobile first Прижимает к правому краю */
+  max-width: 100%;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+  max-width: 100%;
+}
+
+.header__theme-menu-button {
+  border: none;
+  color: var(--link-color);
+  font-weight: var(--content-font-weight);
+  font-size: var(--content-font-size);
+  line-height: 100%;
+  text-align: center;
+  background-color: transparent;
+  text-transform: lowercase;
+  min-inline-size: 70px;
+  min-block-size: 26px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--link-color-hover);
+}
+
+.header__theme-menu-button:focus {
+  outline: none; /*Убирает стандартную синюю обводку браузера при клике/фокусе.*/
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--link-color);
+  /* при Tab */
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--link-color);
+} 
+
+.header__theme-menu-button_type_light {
+
+} 
+
+.header__theme-menu-button_type_auto {
+
+} 
+
+.header__theme-menu-button_type_dark {
+
+} 
+
+.big__title {
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-weight: var(--title-weight);
+  line-height: 0.83;
+  color: var(--title-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  white-space: normal;     /* Обычные переносы (no и focus на разных строках) */
+  word-break: keep-all;    /* Запрещает разрывать слова */
+}
+
+.header__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-row: 3;
+  justify-self: center;
+  align-self: center;
+  gap: 0;
+  max-width: 100%;
+}
+
+.header__text-item {
+  font-size: var(--content-font-size);
+  font-weight: var(--title-weight);
+  color: var(--subtitle-color);
+  max-width: 100%;
+  margin: 0;
+  width: fit-content;
+  text-align: left;
+}

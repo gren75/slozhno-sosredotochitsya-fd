@@ -1,0 +1,11 @@
+.footer {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin-block-start: var(--main-margin);
+  height: max(100vh, 668px);
+}
+
+.footer__title {
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
