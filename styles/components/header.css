@@ -114,7 +114,7 @@
   margin: 0;
   padding: 0;
   grid-row: 3;
-  margin-top: -5px;
+  margin-top: var(--header-text-margin-top);
 }
 
 .header__text-item {

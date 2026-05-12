@@ -102,6 +102,7 @@
   :root {
     --page-padding: 20px;
     --margin-from-top: 192px;
+    --header-text-margin-top: -30px;
 
     --after-header-gap: 60px;
     --section-gap: 80px;
@@ -119,6 +120,7 @@
     grid-column: 1 / 5;  /*чтобы на строке были только они*/
     grid-row: 1;
     justify-self: end;
+    margin-top: -6px;
   }
 
   .big__title {
@@ -155,7 +157,6 @@
 
   .content__list-why {
     grid-column: 2 / 4;
-    align-self: start;
   }
   
   .content__list-what {
@@ -165,10 +166,12 @@
 
   .content__list-how {
     grid-column: 2 / 4;
-    align-self: start;
     grid-row: 1;
   }
 
+  .article__text-one {
+    max-width: 472px;
+  }
 
 
   .gallery__items {
