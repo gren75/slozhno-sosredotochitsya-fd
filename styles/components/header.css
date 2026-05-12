@@ -44,7 +44,7 @@
     max-width: 100%;
     margin: 0;
     padding: 0;
-    margin-top: 75px;
+    margin-top: var(--margin-from-top);
 }
 
 .header__theme-menu-button {

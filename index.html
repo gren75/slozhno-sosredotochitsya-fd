@@ -26,7 +26,8 @@
     <script defer src="./scripts/script.js"></script>
 
 
-  <!--
+
+    <!--
     <style>
     /* Временный макет через background */
       body::before {
@@ -34,11 +35,11 @@
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%; /* ширина макета */
-      height: 100%;
-      background: url('./images/phone-light.png') no-repeat top left;
+      width: 768px;      /* ← точная ширина макета */
+      height: 1024px;  
+      background: url('./images/ipad light.png') no-repeat top left;
       background-color: red;
-      background-size: cover;
+      background-size: 100% auto; 
       opacity: 0.4;
       pointer-events: none;
       z-index: 3;
