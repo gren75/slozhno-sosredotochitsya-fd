@@ -1,6 +1,6 @@
 .header {
   display: grid;
-  grid-template-rows: 1fr min-content 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   align-items: center;
   margin-bottom: 47px;
   height: max(100vh, 668px);
@@ -110,7 +110,7 @@
 .header__text-item {
   font-size: var(--content-font-size);
   font-weight: var(--title-weight);
-  color: var(--subtitle-color);
+  color: var(--accent-color);
   max-width: 100%;
   margin: 0;
   width: fit-content;
