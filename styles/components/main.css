@@ -10,6 +10,11 @@
   align-items: stretch;
 }
 
+.last__content__section {
+  display: grid;  /*мобилка 1 колонка*/
+  align-items: stretch;
+}
+
 .section-title {
   color: var(--section-title-color);
   font-weight: var(--title-weight);

@@ -1,7 +1,6 @@
 .footer {
   display: grid;
   justify-items: center;
-  align-items: center;
   margin-top: var(--before-footer-gap);
   height: max(100vh, 668px);
 }
