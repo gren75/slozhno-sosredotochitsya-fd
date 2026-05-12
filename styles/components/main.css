@@ -96,7 +96,9 @@
 @media (width >= 768px) {
   :root {
     --page-padding: 20px;
+    --after-header-gap: 60px;
     --section-gap: 80px;
+    --before-footer-gap: 60px;
     --galery-gap: 20px;
   }
 
@@ -202,8 +204,10 @@
 
 @media (width >= 1024px) {
   :root {
+    --after-header-gap: 60px;
     --page-padding: 20px;
     --section-gap: 80px;
+    --before-footer-gap: 60px;
     --galery-gap: 20px;
   }
 

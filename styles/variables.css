@@ -20,7 +20,11 @@
   --content-font-weight: normal;
   --page-padding: 10px;
   --title-weight: bold;
+
+  --after-header-gap: 40px;
   --section-gap: 50px;
+
+  --before-footer-gap: 40px;
   --content-section-gap: 20px;
   --article-section-gap: 10px;
   --galery-gap: 10px;
