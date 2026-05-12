@@ -217,7 +217,7 @@
   :root {
     --page-padding: 20px;
     --margin-from-top: 0;
-    --header-text-margin-top: -10px;
+    --header-text-margin-top: -15px;
     --after-header-gap: 60px;
     --section-gap: 80px;
     --before-footer-gap: 60px;
