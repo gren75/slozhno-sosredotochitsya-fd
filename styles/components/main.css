@@ -102,7 +102,7 @@
   :root {
     --page-padding: 20px;
     --margin-from-top: 192px;
-    --header-text-margin-top: -30px;
+    --header-text-margin-top: -20px;
 
     --after-header-gap: 60px;
     --section-gap: 80px;
@@ -204,7 +204,7 @@
   
   .footer {
     min-height: 1024px;
-      grid-template-rows: 1fr min-content 1fr;
+    grid-template-rows: 1fr min-content 1fr;
   }
 
   .footer__title {
@@ -217,7 +217,7 @@
   :root {
     --page-padding: 20px;
     --margin-from-top: 0;
-
+    --header-text-margin-top: 0;
     --after-header-gap: 60px;
     --section-gap: 80px;
     --before-footer-gap: 60px;
@@ -225,32 +225,34 @@
   }
 
   .header {
-    grid-template-columns: 1fr 1fr;
-    min-height: 1024px;
+    grid-template-rows: 1fr min-content 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    min-height: 768px;
   }
     
   .header__theme-menu {
+    grid-column: 1 / 5;  /*чтобы на строке были только они*/
     grid-row: 1;
     justify-self: center;
-    align-self: self-start;
+    margin-top: 0px;
   }
 
   .header__theme-menu-list {
     flex-direction: row;
     padding-top: var(--page-padding);
   }
-
+  
   .big__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
     grid-row: 2;
     margin-left: -20px;
     white-space: nowrap;   /* Запрещает переносы - одна строка! */
   }
 
   .header__text {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
+    grid-column: 3 / 5;
+    grid-row: 3;
     margin-right: 0;
   }
 
@@ -272,7 +274,6 @@
 
   .content__list-why {
     grid-column: 2 / 4;
-    align-self: start;
   }
 
   .content__list-what {
@@ -282,7 +283,49 @@
     gap: 20px;
   }
 
+  .content__list-how {
+    grid-column: 2 / 4;
+    grid-row: 1;
+  }
+
+  .article__text-one {
+    max-width: 648.92px;
+  }
+
+  .gallery__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery__image:nth-child(1) {
+    grid-column: 1 / 3;
+  }
+    
+  .gallery__image:nth-child(2) {
+    grid-column: 3;
+    grid-row: 1 / 3;
+  }
+    
+  .gallery__image:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2 / 4;
+  }
+
+  .gallery__image:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2 / 3;
+  }
+   
+  .gallery__image:nth-child(5) {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+  }
+
   .footer {
-    min-height: 1024px;
+    min-height: 768px;
+    grid-template-rows: 1fr min-content 1fr;
+  }
+
+  .footer__title {
+     grid-row: 2;
   }
 }
