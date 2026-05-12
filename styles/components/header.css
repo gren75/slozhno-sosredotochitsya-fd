@@ -1,9 +1,8 @@
 .header {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  align-items: center;
-  margin-bottom: var(--after-header-gap);
-  height: max(100vh, 668px);
+    display: grid;
+    grid-template-rows: 1fr min-content 1fr;
+    margin-bottom: var(--after-header-gap);
+    height: max(100vh, 668px);
 }
 
 .header__rec {
@@ -16,6 +15,7 @@
   text-transform: uppercase;
   inset-block-start: var(--page-padding);
   inset-inline-end: calc(9px + var(--page-padding));
+  grid-row: 1;
 }
 
 .header__rec::after {
@@ -32,14 +32,19 @@
 .header__theme-menu {
   justify-self: end; /* mobile first Прижимает к правому краю */
   max-width: 100%;
+  align-self: start;
+  grid-row: 1;
 }
 
 .header__theme-menu-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: flex-end;
-  max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 75px;
 }
 
 .header__theme-menu-button {
@@ -94,6 +99,7 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   white-space: normal;     /* Обычные переносы (no и focus на разных строках) */
   word-break: keep-all;    /* Запрещает разрывать слова */
+  grid-row: 2;
 }
 
 .header__text {
@@ -105,12 +111,16 @@
   align-self: center;
   gap: 0;
   max-width: 100%;
+  margin: 0;
+  padding: 0;
+  grid-row: 3;
+  margin-top: -5px;
 }
 
 .header__text-item {
   font-size: var(--content-font-size);
   font-weight: var(--title-weight);
-  color: var(--accent-color);
+  color: var(--header-text-color);
   max-width: 100%;
   margin: 0;
   width: fit-content;
