@@ -217,7 +217,7 @@
   :root {
     --page-padding: 20px;
     --margin-from-top: 0;
-    --header-text-margin-top: 0;
+    --header-text-margin-top: -10px;
     --after-header-gap: 60px;
     --section-gap: 80px;
     --before-footer-gap: 60px;
@@ -253,7 +253,7 @@
   .header__text {
     grid-column: 3 / 5;
     grid-row: 3;
-    margin-right: 0;
+    margin-right: -5px;
   }
 
   .content__section {
