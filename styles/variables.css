@@ -13,23 +13,40 @@
   --article-title-color: #000028;
   --article-text-color: #000028;
 
-
-  --content-font-family: 'IBM Plex mono', sans-serif;
-  --content-font-size: 18px;
-  --content-line-height: 1.3;
-  --content-font-weight: normal;
+ /* Адаптивные переменные (мобильная версия по умолчанию) */
   --page-padding: 10px;
-  --title-weight: bold;
-
   --after-header-gap: 40px;
   --section-gap: 50px;
   --header-text-margin-top: -5px;
-
   --before-footer-gap: 40px;
   --content-section-gap: 20px;
   --article-section-gap: 10px;
   --galery-gap: 10px;
-
   --margin-from-top: 75px;
 }
 
+/* Адаптив для планшетов */
+@media (width >= 768px) {
+  :root {
+    --page-padding: 20px;
+    --margin-from-top: 192px;
+    --header-text-margin-top: -20px;
+    --after-header-gap: 60px;
+    --section-gap: 80px;
+    --before-footer-gap: 60px;
+    --galery-gap: 20px;
+  }
+}
+
+/* Адаптив для десктопов */
+@media (width >= 1024px) {
+  :root {
+    --page-padding: 20px;
+    --margin-from-top: 0;
+    --header-text-margin-top: -15px;
+    --after-header-gap: 60px;
+    --section-gap: 80px;
+    --before-footer-gap: 60px;
+    --galery-gap: 20px;
+  }
+}

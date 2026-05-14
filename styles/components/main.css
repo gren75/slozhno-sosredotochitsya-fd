@@ -94,16 +94,6 @@
 
 
 @media (width >=768px) {
-	:root {
-		--page-padding: 20px;
-		--margin-from-top: 192px;
-		--header-text-margin-top: -20px;
-
-		--after-header-gap: 60px;
-		--section-gap: 80px;
-		--before-footer-gap: 60px;
-		--galery-gap: 20px;
-	}
 
 	.header {
 		grid-template-rows: 1fr min-content 1fr;
@@ -210,15 +200,6 @@
 
 
 @media (width >=1024px) {
-	:root {
-		--page-padding: 20px;
-		--margin-from-top: 0;
-		--header-text-margin-top: -15px;
-		--after-header-gap: 60px;
-		--section-gap: 80px;
-		--before-footer-gap: 60px;
-		--galery-gap: 20px;
-	}
 
 	.header {
 		grid-template-rows: 1fr min-content 1fr;
